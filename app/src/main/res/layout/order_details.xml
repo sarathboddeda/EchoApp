@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/orderdetails_header"
+        layout="@layout/headerinner"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/orderdetails_header">
+        <RelativeLayout
+            android:id="@+id/rl_ordr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_orderdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Details"
+                android:gravity="center"
+                android:textSize="23dp"
+                android:textColor="#1684bf"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:textAllCaps="true"/>
+            <RelativeLayout
+                android:id="@+id/rl_orderdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_orderdetails"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:id="@+id/ll_ordrdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_myorderdtl_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Brinjal"
+                            android:textSize="20dp"
+                            android:layout_margin="3dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="("
+                                android:layout_marginTop="5dp"
+                                android:textSize="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_myorder_quant"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:textSize="20dp"
+                            android:layout_margin="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kilos Bag)"
+                                android:layout_margin="5dp"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--<TextView
+                        android:id="@+id/tv_myorder_delivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Will be delivered on 18th december"/>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Merchant : "/>
+                        <TextView
+                            android:id="@+id/tv_merchant"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Truecomretail"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price : "
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:textSize="18dp"/>
+                    <TextView
+                        android:id="@+id/tv_orderdetails_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="400$"
+                        android:textSize="18dp"
+                        android:layout_margin="5dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2 Days Replacement"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/iv_myorderdetailsimage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/brinjal"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="3dp"/>
+            </RelativeLayout>
+            <View
+                android:id="@+id/v_details"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/rl_orderdetails"
+                android:background="#999"
+                android:layout_margin="5dp">
+            </View>
+            <LinearLayout
+                android:id="@+id/ll_deliverydetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_details"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order and Approved"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_expecteddelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="18dp"
+                    android:text="Excepted by Sunday 22-10-2017" />
+
+
+                <TextView
+                    android:id="@+id/tv_delivered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="18dp"
+                    android:text="Delivered on Sunday 22-10-2017"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/v_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/ll_deliverydetails"
+                android:background="#999"
+                android:layout_margin="5dp">
+            </View>
+            <LinearLayout
+                android:id="@+id/ll_shpingaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_delivery"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping Details"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_orderdelname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Media3 Internation PVT LTD"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:id="@+id/tv_orderdelemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="media3@gmail.com"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:id="@+id/tv_orderdelphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="98987873634"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:id="@+id/tv_orderdeldoorno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Gvk Plaza,Gurudwar"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_orderdelcity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vizag"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:id="@+id/tv_orderdelstate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Andhra Pradesh "
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_orderdelpinno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="530045"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_placeordered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place Order"
+                android:textAllCaps="false"
+                android:layout_margin="20dp"
+                android:background="@drawable/signup_merchantbg"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_below="@+id/ll_shpingaddress"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

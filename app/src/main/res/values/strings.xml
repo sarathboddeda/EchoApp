@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">EchoApp</string>
+    <string name="Signup_user">Signup as User</string>
+    <string name="Signup_merchant">Signup as Merchant</string>
+    <string name="signinrules">By Signing in you are agreeing to our Conditions of Use and Sale and our privacy Notice</string>
+    <string name="loginunderline"><u>Login</u></string>
+    <string name="ok">OK</string>
+    <string name="alertTitle">Echo  App...!</string>
+    <string name="processing">Processing...</string>
+    <string name="loading">Loading...</string>
+    <string name="userlogin">User Login Successfully</string>
+    <string name="buyerrating">Buyer Rating is updated Successfully</string>
+    <string name="merchantRating">Merchant Rating is updated Successfully</string>
+    <string name="Merchdelcenter">Product delivery center updated Successfully</string>
+    <string name="deliveryupdate">Delivery Center Updated Successfully</string>
+    <string name="addedtocart">Product added to the cart</string>
+    <string name="delLogin">Delivery Center Login Successfully</string>
+    <string name="addproduct">Product Added Successfully</string>
+    <string name="updateproduct">Product Updated Successfully</string>
+    <string name="merchantlogin">Merchant Login Successfully</string>
+    <string name="usersignup">User Registered Successfully</string>
+    <string name="orderupdated">Order Updated Successfully</string>
+    <string name="deliverysignup">Delivery Registered Successfully</string>
+    <string name="merchantSignup">Merchant Successfully Registered</string>
+    <string name="merchantupdated">Merchant Updated Successfully</string>
+    <string name="buyerUpdates">Buyer Updated Successfully</string>
+    <string name="frgtEmailSent">We have sent Your account details to email id Please check.</string>
+    <string name="frgtEmailFail">The email you`ve enterd doesn`t match an existing account.</string>
+    <string name="message">MESSAGE</string>
+    <string name="productdescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string-array name="menu_list">
+        <item>Home</item>
+        <item>Merchants</item>
+        <item>Categories</item>
+        <item>My Orders</item>
+        <item>My Cart</item>
+        <item>NewsFeeds</item>
+        <item>Faq</item>
+        <item>Log Out</item>
+    </string-array>
+    <string-array name="delivery_list">
+        <item>Home</item>
+        <item>Buyer Orders</item>
+        <item>Merchant Products</item>
+        <item>Log Out</item>
+    </string-array>
+    <string-array name="merchant_list">
+        <item>Home</item>
+        <item>Total</item>
+        <item>Ordered</item>
+        <item>Balance</item>
+        <item>Log Out</item>
+    </string-array>
+    <string-array name="category">
+        <item>Fruits</item>
+        <item>Vegetables</item>
+    </string-array>
+    <string name="category">Category</string>
+
+    <string name="connectionLost">Connection Lost</string>
+</resources>

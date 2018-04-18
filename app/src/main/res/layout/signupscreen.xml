@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<include android:id="@+id/signupheader"
+    layout="@layout/header"></include>
+    <ScrollView
+        android:id="@+id/sv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/signupheader"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+<LinearLayout
+    android:id="@+id/rl_signupfields"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="25dp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tv_signuptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Create An Account"
+        android:textSize="20dp"
+        android:textColor="#1684bf"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_frstname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/editfield"
+        android:layout_below="@+id/tv_signuptitle"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="First Name"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"/>
+    <EditText
+        android:id="@+id/et_lstnme"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/editfield"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Last Name"
+        android:paddingLeft="10dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/et_frstname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_phnenumber"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/et_lstnme"
+        android:layout_alignStart="@+id/et_lstnme"
+        android:layout_below="@+id/et_lstnme"
+        android:background="@drawable/editfield"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_margin="5dp"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/editfield"
+        android:layout_below="@+id/et_phnenumber"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Email Address"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/editfield"
+        android:layout_below="@+id/et_email"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/et_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/editfield"
+        android:layout_below="@+id/et_password"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Confirm Password"
+        android:layout_margin="5dp"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/et_useraddress"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/editfield"
+        android:layout_below="@+id/et_confirm"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Address"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/et_useraddresscity"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/editfield"
+        android:layout_below="@+id/et_useraddress"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="City"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/et_useraddressstate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/editfield"
+        android:layout_below="@+id/et_useraddresscity"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="State"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp" />
+   <!-- <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Profile Pic"
+        android:layout_below="@+id/et_useraddressstate"
+        style="@style/editTextEntryName"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000"
+        android:textSize="20dp" />-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/heading"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Upload Image"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/iv_proimage"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>-->
+    <Button
+        android:id="@+id/bt_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:layout_below="@+id/et_useraddressstate"
+        android:background="@drawable/signup_merchantbg"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:id="@+id/ll_alredy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_signup"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="horizontal">
+    
+    <TextView
+        android:id="@+id/tv_haveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/bt_signup"
+        android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginunderline"
+            android:paddingLeft="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingRight="4dp"
+            android:layout_below="@+id/bt_signup"
+            android:layout_marginTop="5dp"
+            android:textColor="#1684bf"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="here"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/bt_signup"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

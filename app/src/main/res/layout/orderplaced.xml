@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/ordrcnfrm"
+        layout="@layout/headerinner"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Your order has been placed and it will be dispatched to the selected deliver center"
+        android:layout_below="@+id/ordrcnfrm"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:textColor="#000"/>
+
+
+</RelativeLayout>

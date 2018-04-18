@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.echoapp">
+
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TypeOfSignup"></activity>
+        <activity android:name=".user.LoginScreen"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".user.SignupScreen"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".user.UserProductGridview"></activity>
+        <activity android:name=".user.ProductDetails"></activity>
+        <activity android:name=".user.ShoppingCart"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="user.CheckOut"></activity>
+        <activity android:name=".Header"></activity>
+        <activity android:name=".user.MyProfile"></activity>
+        <activity android:name=".user.EditProfile"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".user.MyorderActivity"></activity>
+        <activity android:name=".user.MyCart"></activity>
+        <activity android:name=".user.OrderDetails"></activity>
+        <activity android:name=".merchant.MerchantLogin"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".merchant.MerchantSignup"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".merchant.MerchantProducts"></activity>
+        <activity android:name=".merchant.TotalProducts"></activity>
+        <activity android:name=".merchant.OrderedProducts"></activity>
+        <activity android:name=".merchant.BalanceProducts"></activity>
+        <activity android:name=".IndividualDetails"></activity>
+        <activity android:name=".merchant.MerchantEditProfile"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".MerchantProductAdding"></activity>
+        <activity android:name=".DeliveryCenter"></activity>
+        <activity android:name=".user.OrderedPlaced"></activity>
+        <activity android:name=".AddProduct"></activity>
+        <activity android:name=".delivery.DeliveryLogin"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".delivery.DeliverySignup"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".merchant.AddProductsNew"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".delivery.UpdateDeliveryCenter"></activity>
+        <activity android:name=".UpdateProduct"></activity>
+        <activity android:name=".EditProduct"></activity>
+        <activity android:name=".user.GetAllMerchants"></activity>
+        <activity android:name=".user.GetAllCategories"></activity>
+        <activity android:name=".user.CategoryProducts"></activity>
+        <activity android:name=".user.GetMerchantProducts"></activity>
+        <activity android:name=".user.ForgotPassword"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".merchant.MerchantForgotPassword"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".user.DeliveryCenterNew"></activity>
+        <activity android:name=".merchant.MerchantDeliveryCenter"></activity>
+        <activity android:name=".user.NewsFeedActivity"></activity>
+        <activity android:name=".user.FaqActivity"></activity>
+        <activity android:name=".user.TypesOfProducts"></activity>
+        <activity android:name=".delivery.DelivercenterHome"></activity>
+        <activity android:name=".delivery.DeliveryCenterBuyerOrders"></activity>
+        <activity android:name=".delivery.DeliveryCenterMerchantProducts"></activity>
+        <activity android:name=".delivery.UserOrderedDeliveryRating"></activity>
+        <activity android:name=".delivery.MerchantProductRating"></activity>
+        <activity android:name=".delivery.DeliveryForgotPassword"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+    </application>
+
+</manifest>

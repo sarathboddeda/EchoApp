@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/orderedsingle"
+        layout="@layout/headerinner"/>
+    <RelativeLayout
+        android:id="@+id/rl_orderedsdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feeds"
+        android:layout_below="@+id/orderedsingle">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+            <LinearLayout
+                android:id="@+id/ll_orderedname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_order_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brinjal"
+                    android:textSize="20dp"
+                    android:layout_margin="3dp"/>
+                <TextView
+                    android:id="@+id/tv_order_prize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(50kilos bag)"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_ordecost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$400.00"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/ll_availablename"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_ordquant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/ll_availablename"
+                />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in kilos"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/ll_availablename"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!--<ImageView
+            android:id="@+id/iv_ordeimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/brinjal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />-->
+        <com.example.hp.echoapp.RoundedImageView
+            android:id="@+id/iv_ordeimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/brinjal"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

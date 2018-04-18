@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/merchentsheader"
+        layout="@layout/headerinner"></include>
+    <TextView
+        android:id="@+id/tv_allmerchanttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Merchants"
+        android:textSize="20dp"
+        android:textColor="@color/heading"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/merchentsheader"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="10dp"/>
+    <ListView
+        android:id="@+id/ll_allmerchants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_allmerchanttitle"></ListView>
+
+</RelativeLayout>

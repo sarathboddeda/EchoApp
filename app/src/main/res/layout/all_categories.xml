@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/allcat_header"
+        layout="@layout/headerinner"/>
+
+    <TextView
+        android:id="@+id/tv_cat_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Categories"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/heading"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/allcat_header"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="10dp"
+        />
+    <ListView
+        android:id="@+id/ll_allcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_cat_heading"></ListView>
+
+</RelativeLayout>

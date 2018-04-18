@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_mycart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:id="@+id/rl_mycartdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true">
+                <LinearLayout
+                    android:id="@+id/ll_mycartname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_mycart_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Brinjal"
+                        android:textSize="20dp"
+                        android:layout_margin="3dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="("
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_mycart_prize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="kilos bag)"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="20dp"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_mycartdelevery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merchant:"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_margin="1dp"/>
+                    <TextView
+                        android:id="@+id/tv_mycartmerchant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SunShine"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="2dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_mycartcost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_mycartname"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="$400.00"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <!--<ImageView
+                android:id="@+id/iv_mycartimage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/brinjal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />-->
+            <com.example.hp.echoapp.RoundedImageView
+                android:id="@+id/iv_mycartimage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/brinjal"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_mycartdetails">
+
+            <LinearLayout
+                android:id="@+id/ll_editcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+               <!-- <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/edit_icon_2x" />-->
+
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Edit"
+                    android:textSize="25dp" />-->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_cartdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:id="@+id/iv_crtdel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/delete_icon_2x"
+                    android:layout_marginTop="10dp"/>
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:layout_margin="10dp"
+                    android:textSize="25dp"/>-->
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

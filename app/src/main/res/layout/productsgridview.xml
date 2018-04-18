@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/gv_header"
+        layout="@layout/headerinner"></include>
+
+    <TextView
+        android:id="@+id/tv_productviewtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Products"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#1684bf"
+        android:layout_below="@+id/gv_header"/>
+
+    <GridView
+        android:id="@+id/gv_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:layout_below="@+id/tv_productviewtitle">
+    </GridView>
+
+</RelativeLayout>

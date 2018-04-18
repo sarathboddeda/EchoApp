@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/del_merchant_header"
+        layout="@layout/headerinner"/>
+    <RelativeLayout
+        android:id="@+id/rl_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/del_merchant_header">
+        <TextView
+            android:id="@+id/tv_merchantavailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merchant Products"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:textColor="#1674bf"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_delmerchant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_add">
+
+    </ListView>
+
+
+</RelativeLayout>

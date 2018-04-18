@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include android:id="@+id/mertv_header"
+        layout="@layout/headerinner"></include>
+    <TextView
+        android:id="@+id/tv_tete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News and Feeds"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:textColor="#1674bf"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/ll_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_tete">
+    </ListView>
+
+</LinearLayout>

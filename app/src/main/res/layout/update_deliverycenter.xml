@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/deliverysignup"
+        layout="@layout/headerinner"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/deliverysignup"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Update Delivery"
+                android:fontFamily="sans-serif-condensed"
+                android:textAllCaps="true"
+                android:textColor="#1684BF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_updatefullname"
+                style="@style/editTextEntryName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_logintitle"
+                android:background="@drawable/editfield"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Full Name"
+                android:paddingLeft="15dp"
+                android:layout_margin="5dp"
+                />
+
+           <!-- <EditText
+                android:id="@+id/et_updatedelemailname"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/et_fullname"
+                android:layout_margin="5dp"
+                android:background="@drawable/editfield"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Email id"
+                android:paddingLeft="15dp" />-->
+
+
+
+
+            <EditText
+                style="@style/editTextEntryName"
+                android:id="@+id/et_updateaddress"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/et_delemailname"
+                android:fontFamily="sans-serif-condensed"
+                android:background="@drawable/editfield"
+                android:hint="Address"
+                android:paddingLeft="15dp"
+                android:layout_margin="5dp" />
+            <EditText
+                style="@style/editTextEntryName"
+                android:id="@+id/et_updatetown"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/editfield"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Town/City"
+                android:paddingLeft="15dp"
+                android:layout_margin="5dp" />
+            <EditText
+                style="@style/editTextEntryName"
+                android:id="@+id/et_updatestate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/editfield"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="State"
+                android:paddingLeft="15dp"
+                android:layout_margin="5dp" />
+
+            <EditText
+                style="@style/editTextEntryName"
+                android:id="@+id/et_updatezipcode"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/editfield"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Zip Code"
+                android:paddingLeft="15dp" />
+
+           <!-- <EditText
+                android:id="@+id/et_updatemobile"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/editfield"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Mobile"
+                android:paddingLeft="15dp"
+                android:layout_margin="5dp" />-->
+            <EditText
+                style="@style/editTextEntryName"
+                android:id="@+id/et_updatecountry"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_logintitle"
+                android:background="@drawable/editfield"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Country"
+                android:layout_margin="5dp" />
+            <Button
+                android:id="@+id/bt_updatedeliver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Delivery"
+                android:layout_below="@+id/cb_remember"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textAllCaps="false"
+                android:background="@drawable/signup_merchantbg"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

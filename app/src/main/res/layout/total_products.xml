@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/available_header"
+        layout="@layout/headerinner"/>
+    <RelativeLayout
+        android:id="@+id/rl_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/available_header">
+    <TextView
+        android:id="@+id/tv_merchantavailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Products"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:textColor="#1674bf"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/iv_addproduct"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Add"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_margin="20dp"
+        android:background="@drawable/blue_button"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_available"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_add">
+
+    </ListView>
+
+</RelativeLayout>

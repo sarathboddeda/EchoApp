@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.hp.echoapp.CheckableRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="3dp"
+        android:background="@drawable/delivery">
+    <com.example.hp.echoapp.InertCheckBox
+        android:id="@+id/singleitemCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:button="@drawable/single_radio_chice" />
+
+
+    <!--<TextView
+        android:id="@+id/tv_delnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_toRightOf="@+id/singleitemCheckBox"/>-->
+
+    <TextView
+        android:id="@+id/tv_delnew"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/singleitemCheckBox"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:focusable="false"/>
+    </RelativeLayout>
+
+</com.example.hp.echoapp.CheckableRelativeLayout>

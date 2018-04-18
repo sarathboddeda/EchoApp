@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_margin="15dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        />
+
+    <ScrollView
+        android:id="@+id/sv_signuptype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_logo"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="60dp">
+        <RelativeLayout
+            android:id="@+id/rl_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt_signupuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Signup_user"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="#3594c6"
+                android:background="@drawable/signup_user_bg"
+                android:layout_margin="15dp"
+                android:padding="8dp"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/bt_signupmerchant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Signup_merchant"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_margin="15dp"
+                android:padding="8dp"
+                android:background="@drawable/signup_merchantbg"
+                android:layout_below="@+id/bt_signupuser"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_deliversignupuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Signup as Delivery"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="#3594c6"
+                android:background="@drawable/signup_user_bg"
+                android:layout_below="@+id/bt_signupmerchant"
+                android:layout_margin="15dp"
+                android:padding="8dp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

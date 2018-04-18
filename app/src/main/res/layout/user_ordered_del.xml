@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/buyerorderdetails_header"
+        layout="@layout/headerinner"></include>
+    <ScrollView
+        android:id="@+id/sv_pro_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buyerorderdetails_header"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sv_pro_details">
+            <TextView
+                android:id="@+id/tv_producttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ordered Details"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#1684bf"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/ll_0rderedproductdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tv_producttitle"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <!--<ImageView
+                    android:id="@+id/iv_productdetails_image"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/brinjal" />-->
+                <com.example.hp.echoapp.RoundedImageView
+                    android:id="@+id/iv_orderedproductdetails_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/brinjal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_delorderedproducttitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Brinjal"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price : "
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/tv_delorderdproductprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="10"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_delorderdquqntity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="kilos Ordered"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_delmerchant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ll_0rderedproductdetails">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:paddingTop="15dp"
+                    android:text="Merchant : "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/tv_orderdmerchantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:paddingTop="15dp"
+                    android:text="XYZ"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_delbuyer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ll_delmerchant">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:paddingTop="15dp"
+                    android:text="Buyer : "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/delorderedbuyername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:paddingTop="15dp"
+                    android:text="XYZ"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_ratebuyer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ll_delbuyer"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Rate Buyer : "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+           <!-- <RatingBar
+                android:id="@+id/rb_buyerorders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+-->
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/ratingBarID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_description_one"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:rating="2.5"
+                    android:stepSize="0.1"
+                    app:srb_borderColor="@color/colorPrimary"
+                    app:srb_fillColor="@color/colorPrimaryDark"
+                    app:srb_numberOfStars="5"
+                    app:srb_starSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_ratebuyer"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Write a Review"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/et_descproordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:singleLine="false"
+                    android:background="@drawable/editfield"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="8"
+                    android:paddingLeft="10dp"
+                    android:hint="Description"
+                    android:layout_margin="7dp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="false"
+                    android:background="@drawable/signup_merchantbg"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

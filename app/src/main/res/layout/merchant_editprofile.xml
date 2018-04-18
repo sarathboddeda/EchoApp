@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/editmerchantsignupheader"
+        layout="@layout/headerinner"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editmerchantsignupheader"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_merchantfields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/tv_editmerchantsignuptitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="25dp"
+                    android:textColor="#1684bf"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/et_editmerchantcmpnyname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    style="@style/editTextEntryName"
+                    android:background="@drawable/editfield"
+                    android:layout_below="@+id/et_merchantpassport"
+                    android:hint="Company Name"
+                    android:lines="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+                <EditText
+                    android:id="@+id/et_editmerchantcmpnyregis"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    style="@style/editTextEntryName"
+                    android:background="@drawable/editfield"
+                    android:layout_below="@+id/et_merchantrepassword"
+                    android:hint="Company Registration"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+                <EditText
+                    android:id="@+id/et_editmerchantpersonaladdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/editfield"
+                    style="@style/editTextEntryName"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_below="@+id/tv_merchantsignuptitle"
+                    android:hint="Personal Address"
+                    android:lines="1"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+                <EditText
+                    android:id="@+id/et_editmerchantpersonalcnmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    style="@style/editTextEntryName"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/editfield"
+                    android:layout_below="@+id/et_merchantpersonaladdress"
+                    android:hint="Personal Contact"
+                    android:inputType="number"
+                    android:layout_margin="5dp"
+                    android:lines="1"
+                    android:paddingLeft="10dp"/>
+                <EditText
+                    android:id="@+id/et_editmerchantpassport"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    style="@style/editTextEntryName"
+                    android:background="@drawable/editfield"
+                    android:layout_below="@+id/et_merchantpersonalcnmt"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="NRIC#/Passport"
+                    android:layout_margin="5dp"
+                    android:lines="1"
+                    android:paddingLeft="10dp"/>
+
+                <!--<EditText
+                    android:id="@+id/et_editmerchantemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/editfield"
+                    android:layout_below="@+id/et_merchantcmpnyname"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Merchant Email"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>-->
+               <!-- <EditText
+                    android:id="@+id/et_editmerchantpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/editfield"
+                    android:layout_below="@+id/et_merchantemail"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Password"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>-->
+                <!--<EditText
+                    android:id="@+id/et_editmerchantrepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/editfield"
+                    android:layout_below="@+id/et_merchantemail"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Retype Password"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>-->
+                <EditText
+                    android:id="@+id/et_editmerchantyearestablished"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:lines="1"
+                    style="@style/editTextEntryName"
+                    android:background="@drawable/editfield"
+                    android:layout_below="@+id/et_merchantcmpnyregis"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Year Established"
+                    android:layout_margin="5dp"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"/>
+                <EditText
+                    android:id="@+id/et_editmerchantproductcertification"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/editfield"
+                    android:hint="Product Certificate"
+                    android:fontFamily="sans-serif-condensed"
+                    style="@style/editTextEntryName"
+                    android:paddingLeft="10dp"
+                    android:layout_margin="5dp"
+                    android:lines="1"
+                    android:layout_below="@+id/et_merchantyearestablished"
+                    android:layout_alignLeft="@+id/et_merchantyearestablished"
+                    android:layout_alignStart="@+id/et_merchantyearestablished" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/bt_editmerchantsignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_merchantfields"
+                android:text="Update Details"
+                android:background="@drawable/signup_merchantbg"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_margin="5dp"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

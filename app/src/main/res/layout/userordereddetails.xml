@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/userorderd_header"
+        layout="@layout/headerinner"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userorderd_header">
+        <TextView
+            android:id="@+id/tv_userordredpro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Ordered Products"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textColor="#1674bf"
+            android:textStyle="bold"/>
+        <ListView
+            android:id="@+id/lv_userorderd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_userordredpro">
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>

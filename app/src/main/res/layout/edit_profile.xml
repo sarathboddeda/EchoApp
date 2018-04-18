@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/edit_header"
+        layout="@layout/headerinner"></include>
+    <ScrollView
+        android:id="@+id/sv_editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+            <TextView
+                android:id="@+id/tv_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Edit Profile"
+                android:fontFamily="sans-serif-condensed"
+                android:textAllCaps="true"
+                android:layout_marginTop="8dp"
+                android:textSize="20dp"
+                android:textColor="#1674bf"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@+id/tv_heading"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/et_editfrstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/editfield"
+                    android:fontFamily="sans-serif-condensed"
+                    style="@style/editTextEntryName"
+                    android:hint="Pavan"
+                    android:paddingLeft="15dp"
+                    android:lines="1"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/et_editlastname"
+                    style="@style/editTextEntryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/editfield"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Kumar"
+                    android:paddingLeft="15dp"
+                    android:lines="1"
+                    android:layout_marginBottom="10dp"/>
+                <!--<EditText
+                    android:id="@+id/et_editemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/editfield"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="pavan@gmail.com"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="10dp"/>-->
+               <!-- <EditText
+                    android:id="@+id/et_editpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/editfield"
+                    android:hint="Password"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="10dp"/>-->
+                <!--<EditText
+                    android:id="@+id/et_editretyepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/editfield"
+                    android:hint="Retype Password"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="10dp"/>-->
+               <!-- <EditText
+                    android:id="@+id/et_editphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/editfield"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="9844757594"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="10dp"/>-->
+                <EditText
+                    android:id="@+id/et_editaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/editfield"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="address"
+                    android:paddingLeft="15dp"
+                    style="@style/editTextEntryName"
+                    android:lines="1"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/bt_buyeredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#168bf4"
+                    android:text="submit"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
